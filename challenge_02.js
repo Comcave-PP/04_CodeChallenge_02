@@ -16,3 +16,22 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+const firstname = prompt("Wie heißt du denn?");
+const alter = prompt("Wie alt bist du?");
+
+switch (true){
+    case (alter < 6):
+        console.log(firstname + " " + "trinkt Milch");
+        break;
+    case (alter > 5) && (alter < 13):
+        console.log(firstname + " " + "trinkt Saft");
+        break;
+    case (alter > 12) && (alter < 18):
+        console.log(firstname + " " + "trinkt Cola");
+        break;
+    default:
+        console.log(firstname + " " + "trinkt Wein");
+        break;
+}
+    
+
