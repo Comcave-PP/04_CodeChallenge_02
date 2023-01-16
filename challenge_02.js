@@ -16,22 +16,50 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-const firstname = prompt("Wie heißt du denn?");
+
+const Name = prompt("Wie heißt du denn?");
 const alter = prompt("Wie alt bist du?");
 
-switch (true){
-    case (alter < 6):
-        console.log(firstname + " " + "trinkt Milch");
-        break;
-    case (alter > 5) && (alter < 13):
-        console.log(firstname + " " + "trinkt Saft");
-        break;
-    case (alter > 12) && (alter < 18):
-        console.log(firstname + " " + "trinkt Cola");
-        break;
-    default:
-        console.log(firstname + " " + "trinkt Wein");
-        break;
+/*** Mit Switch-Case ****/
+// switch (true) {
+//     case (alter >= 0) && (alter < 6):
+//         console.log(Name + " " + "trinkt Milch");
+//         break;
+//     case (alter >= 6) && (alter < 13):
+//         console.log(Name + " " + "trinkt Saft");
+//         break;
+//     case (alter >= 13) && (alter < 18):
+//         console.log(Name + " " + "trinkt Cola");
+//         break;
+//     case (alter >= 18):
+//         console.log(Name + " " + "trinkt Wein")
+//     default:
+//         console.log("Ungültiges Alter eingegeben");
+//         break;
+// }
+
+/*** Mit if-else ***/
+if(alter >= 0 && alter < 6)
+{
+    console.log(Name + " " + "trinkt Milch")
 }
-    
+else if(alter >= 6 && alter < 13)
+{
+    console.log(Name + " " + "trinkt Saft");
+}
+else if(alter >= 13 && alter < 18)
+{
+    console.log(Name + " " + "trinkt Cola");
+}
+else if(alter >= 18)
+{
+    console.log(Name + " " + "trinkt Wein");
+}
+else
+{
+    console.log("Ungültiges Alter eingegeben");
+}
+
+
+
 
