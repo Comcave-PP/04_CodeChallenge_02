@@ -16,11 +16,14 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+// Deklaration
+let Name , Alter;
 
-const Name = prompt("Wie heißt du denn?");
-const Alter = prompt("Wie alt bist du?");
+//Wertzuweisung
+Name = prompt("Wie heißt du denn?");
+Alter = parseInt(prompt("Wie alt bist du?"));
 
-/*** Mit Switch-Case ****/
+/*** Lösung mit Switch-Case ****/
 switch (true) {
     case (Alter >= 0) && (Alter < 6):
         console.log(Name + " " + "trinkt Milch");
@@ -40,7 +43,7 @@ switch (true) {
 }
 
 
-/*** Mit if-else ***/
+/*** Lösung mit if-else ***/
 // if(Alter >= 0 && Alter < 6)
 // {
 //     console.log(Name + " " + "trinkt Milch")
